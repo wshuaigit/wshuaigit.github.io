@@ -75,7 +75,7 @@
 
 
 
-  <meta name="keywords" content="java,">
+  <meta name="keywords" content="简单工厂模式,">
 
 
 
@@ -86,23 +86,18 @@
 
 
 
-<meta name="description" content="Java基础提高（一）最近开始Java的复习，弥补一下从前的知识盲区且深入底层去学习Java，通过了解源码更加深入的去了解Java。 1.面向过程和面向对象的区别&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;我们都知道C语言是一门完全面向过程的语言，当我们要是实现某些需求时，我们更在意的是如何通过一个函数去实现该需求。&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nb">
-<meta name="keywords" content="java">
+<meta name="description" content="简单工厂模式&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;相信很多人都听过设计模式吧，但是也只是局限于听说。很多人认为设计模式并没啥用啊（当然也包括我），我自己写的代码也可以完成需求，为啥还要设计模式呢？&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;在">
+<meta name="keywords" content="简单工厂模式">
 <meta property="og:type" content="article">
-<meta property="og:title" content="java基础提高(一)">
+<meta property="og:title" content="设计模式--简单工厂模式">
 <meta property="og:url" content="https://wshuaigit.github.io/post/4cc0092f.html">
 <meta property="og:site_name" content="WangZhao Blogs">
-<meta property="og:description" content="Java基础提高（一）最近开始Java的复习，弥补一下从前的知识盲区且深入底层去学习Java，通过了解源码更加深入的去了解Java。 1.面向过程和面向对象的区别&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;我们都知道C语言是一门完全面向过程的语言，当我们要是实现某些需求时，我们更在意的是如何通过一个函数去实现该需求。&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nb">
+<meta property="og:description" content="简单工厂模式&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;相信很多人都听过设计模式吧，但是也只是局限于听说。很多人认为设计模式并没啥用啊（当然也包括我），我自己写的代码也可以完成需求，为啥还要设计模式呢？&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;在">
 <meta property="og:locale" content="Zh-Hans">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20190411211121383.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dhbmdfemhhb18=,size_16,color_FFFFFF,t_70">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20190411221415605.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dhbmdfemhhb18=,size_16,color_FFFFFF,t_70">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/201904112215287.png">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20190411225306299.png">
-<meta property="og:updated_time" content="2019-04-20T03:20:14.605Z">
+<meta property="og:updated_time" content="2019-04-20T03:24:32.319Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="java基础提高(一)">
-<meta name="twitter:description" content="Java基础提高（一）最近开始Java的复习，弥补一下从前的知识盲区且深入底层去学习Java，通过了解源码更加深入的去了解Java。 1.面向过程和面向对象的区别&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;我们都知道C语言是一门完全面向过程的语言，当我们要是实现某些需求时，我们更在意的是如何通过一个函数去实现该需求。&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nb">
-<meta name="twitter:image" content="https://img-blog.csdnimg.cn/20190411211121383.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dhbmdfemhhb18=,size_16,color_FFFFFF,t_70">
+<meta name="twitter:title" content="设计模式--简单工厂模式">
+<meta name="twitter:description" content="简单工厂模式&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;相信很多人都听过设计模式吧，但是也只是局限于听说。很多人认为设计模式并没啥用啊（当然也包括我），我自己写的代码也可以完成需求，为啥还要设计模式呢？&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;在">
 
 
 
@@ -138,7 +133,7 @@
 
 
 
-  <title>java基础提高(一) | WangZhao Blogs</title>
+  <title>设计模式--简单工厂模式 | WangZhao Blogs</title>
   
 
 
@@ -314,7 +309,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">java基础提高(一)</h1>
+          <h1 class="post-title" itemprop="name headline">设计模式--简单工厂模式</h1>
         
 
         <div class="post-meta">
@@ -326,8 +321,8 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-04-20T11:17:02+08:00">
-                2019-04-20
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-04-15T11:00:02+08:00">
+                2019-04-15
               </time>
             
 
@@ -349,8 +344,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/java/" itemprop="url" rel="index">
-                    <span itemprop="name">java</span>
+                  <a href="/categories/实际模式/" itemprop="url" rel="index">
+                    <span itemprop="name">实际模式</span>
                   </a>
                 </span>
 
@@ -395,7 +390,7 @@
                   <span class="post-meta-item-text">Words count in article&#58;</span>
                 
                 <span title="Words count in article">
-                  1,596 字
+                  1,774 字
                 </span>
               
 
@@ -411,7 +406,7 @@
                   <span class="post-meta-item-text">Reading time &asymp;</span>
                 
                 <span title="Reading time">
-                  6 分钟
+                  8 分钟
                 </span>
               
             </div>
@@ -432,83 +427,18 @@
       
 
       
-        <h1 id="Java基础提高（一）"><a href="#Java基础提高（一）" class="headerlink" title="Java基础提高（一）"></a>Java基础提高（一）</h1><p>最近开始Java的复习，弥补一下从前的知识盲区且深入底层去学习Java，通过了解源码更加深入的去了解Java。</p>
-<h2 id="1-面向过程和面向对象的区别"><a href="#1-面向过程和面向对象的区别" class="headerlink" title="1.面向过程和面向对象的区别"></a>1.面向过程和面向对象的区别</h2><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;我们都知道C语言是一门完全面向过程的语言，当我们要是实现某些需求时，我们更在意的是如何通过一个函数去实现该需求。<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;而在Java中我们更加在意的是对象，哪些对象拥有哪些功能。当我们面对一个需求时，让这些对象去实现某些需求。<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;以将大象装入冰箱为例，面向过程我们可能会这样做：<strong><em>我们把冰箱门打开，我们把大象装进冰箱，我们把冰箱关闭</em></strong>。<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;而面向对象我们可能会这样做：首先进行分析，该需求有两个对象，冰箱和大象。冰箱有如下功能：打开、关闭。大象有如下功能：走到冰箱中。实现该需求过程如下：<strong><em>冰箱开门，大象走进冰箱，冰箱关门</em></strong>。<br>    显而易见：面向过程更加在意的是我们实现这个需求的过程，而面向对象则是通过对对象的分析，让其他对象去完成该需求。<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;如果你刚接触Java，可能并不能体会到什么叫面向对象，比如我们写一个方法，你觉得这个实现过程和面向过程的实现并没有区别。这是因为<strong>面向对象只是在宏观上是面向对象，微观上依然是面向过程。</strong><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>简而言之，面向过程是我们自己去做，面向对象是让别人去做。</strong><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;当然面向面向并不仅仅局限于此，其三大特征为：封装、继承、多态。</p>
-<h2 id="2-JDK和JRE的区别"><a href="#2-JDK和JRE的区别" class="headerlink" title="2.JDK和JRE的区别"></a>2.JDK和JRE的区别</h2><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;JDK是Java程序的开发包，而Jre只是Java程序的运行环境。JDK包含了Jre，JDK中的bin目录中有如下程序javac.exejava.exe,javap.exe等,javac用于编译Java程序的源代码，生成字节码文件；java用于运行编译后的字节码文件，javap用于反编译，可以查看编译后的指令等。</p>
-<h2 id="3-基本数据类型和包装类型"><a href="#3-基本数据类型和包装类型" class="headerlink" title="3.基本数据类型和包装类型"></a>3.基本数据类型和包装类型</h2><table>
-<thead>
-<tr>
-<th>基本数据类型</th>
-<th>包装类型</th>
-<th>字节</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>boolean</td>
-<td>Boolean</td>
-<td>-</td>
-</tr>
-<tr>
-<td>byte</td>
-<td>Byte</td>
-<td>1</td>
-</tr>
-<tr>
-<td>short</td>
-<td>Short</td>
-<td>2</td>
-</tr>
-<tr>
-<td>char</td>
-<td>Character</td>
-<td>2</td>
-</tr>
-<tr>
-<td>int</td>
-<td>Integer</td>
-<td>4</td>
-</tr>
-<tr>
-<td>float</td>
-<td>Float</td>
-<td>4</td>
-</tr>
-<tr>
-<td>double</td>
-<td>Double</td>
-<td>8</td>
-</tr>
-<tr>
-<td>long</td>
-<td>Long</td>
-<td>8</td>
-</tr>
-<tr>
-<td>void</td>
-<td>Void</td>
-<td>-</td>
-</tr>
-</tbody>
-</table>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;说明：<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1、boolean类型所占的存储空间的大小没有明确知道，仅定义为能够取字面值true或false。<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2、一个boolean变量在编译后以一个int代替，一个boolean数组编译后，数组中每个成员是一个byte。<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3、《Java编程思想》中将void列为基本类型，但是其他资料并没有认为void是基本类型，Void的源码中说明该类是一个占位符类。<br><img src="https://img-blog.csdnimg.cn/20190411211121383.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dhbmdfemhhb18=,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4、在Java中，认为一切皆对象，但是由于基本类型并不是对象，便引入了包装类型，实现基本类型和包装类型的相互转化。<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5、基本类型和包装类型的区别：<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(一)初值不同，如boolean的初值为false,int的初值为0，而包装类型的初值为null(注意：这里的初值是位于类中的成员变量而不是方法中的变量，方法中的变量必须赋初值才能使用)；<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(二)存储位置不同，基本类型存储位置在栈中，而包装类型的存储位置位于堆中；<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(三)在与集合类共同使用时，必须使用包装类型。</p>
-<h2 id="4-自动装箱和拆箱"><a href="#4-自动装箱和拆箱" class="headerlink" title="4.自动装箱和拆箱"></a>4.自动装箱和拆箱</h2><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;JDK1.5后引入了自动装箱和拆箱，从而实现基本类型和包装类型的自动转换。自动装箱调用的是valueOf()方法，而自动拆箱调用的是(基本类型+Value())方法，例如Integer实现自动拆箱调用的是intValue()。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">Integer a = 1;</span><br><span class="line">   Integer b = 1;</span><br><span class="line">   System.out.println(a == b);</span><br><span class="line"></span><br><span class="line">   Integer c = new Integer(1);</span><br><span class="line">   Integer d = new Integer(1);</span><br><span class="line">   System.out.println(c == d);</span><br></pre></td></tr></table></figure>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;运行段代码后，输出应该为：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">true</span><br><span class="line">false</span><br></pre></td></tr></table></figure>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;这是因为 == 比较的是地址，而Integer存在缓存池，进行自动装箱且值位于-128  -  127时，从缓存池中返回对应的Integer的引用，所以a,b的引用相同。而c、d并没有进行自动装箱，而是自己在堆中 new 对象，每个对象的引用。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">public static Integer valueOf(int i) &#123;</span><br><span class="line">	//  IntegerCache.low = -128; </span><br><span class="line">	// IntegerCache.high; high的值默认为127</span><br><span class="line">       if (i &gt;= IntegerCache.low &amp;&amp; i &lt;= IntegerCache.high)</span><br><span class="line">       	IntegerCache.cache[] 是一个Integer数组，包含了 low到high 的引用</span><br><span class="line">           return IntegerCache.cache[i + (-IntegerCache.low)];</span><br><span class="line">       return new Integer(i);</span><br><span class="line">   &#125;</span><br></pre></td></tr></table></figure>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;那么对于其他的包装类型，是否也同样有缓存池呢？</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">Boolean a = true;</span><br><span class="line">Boolean b = true;</span><br><span class="line">System.out.println(a == b);</span><br><span class="line"></span><br><span class="line">Boolean c = new Boolean(true);</span><br><span class="line">Boolean d = new Boolean(true);</span><br><span class="line">System.out.println(c == d);</span><br></pre></td></tr></table></figure>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;输出结果如下：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">true</span><br><span class="line">false</span><br></pre></td></tr></table></figure>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;通过观察源码，发现类中有这样两个常量：<br><img src="https://img-blog.csdnimg.cn/20190411221415605.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dhbmdfemhhb18=,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;当我们进行自动装箱时，返回这两个对象的引用。<br><img src="https://img-blog.csdnimg.cn/201904112215287.png" alt="在这里插入图片描述">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;我们再来看看其他的包装类：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Double a = 1.0;</span><br><span class="line">Double b = 1.0;</span><br><span class="line">System.out.println(a == b);</span><br></pre></td></tr></table></figure>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;猜测一下答案吧，可能会有点出乎你的意料，答案是：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">true</span><br></pre></td></tr></table></figure>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;这当然是因为并不存在缓存池了，想想也是。对于浮点型，要创建它的缓存池好像也做不到吧。<br>| 包装类型 | 是否存在缓存池 |范围 |<br>|–|–|–|<br>| Boolean | 不存在，但是存在两个常量 |  |<br>| Byte | 存在 | -127 - 128|<br>| Short | 存在 | -127 - 128|<br>| Charcater | 存在 | 0 - 127|<br>| Integer | 存在 |  -127 - 128|<br>| Float | 不存在 |  |<br>| Double | 不存在 |  |<br> | Long | 存在 | -127 - 128|<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;值得注意的是Integer缓存池的上限可以我们自己定义，但是不能超过127，而其他包装类型的范围都是已经确定了的。<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;不知道你有没有写过这样的代码？将一个int直接自动装箱为Double。如果没有的话，可以去尝试一下，结果可能会出乎你的意料。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">public static void main(String[] args) &#123;</span><br><span class="line"></span><br><span class="line">    Double a = 1;</span><br><span class="line"></span><br><span class="line">    Double b = new Double(1);</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;如上所示，你可能会认为Double自动装箱的话调vlaueOf(double    d)那么的话，我的1可以自动类型转换为1.0，那我当然可以实现自动装箱了，然而编译结果如下：<br> <img src="https://img-blog.csdnimg.cn/20190411225306299.png" alt="在这里插入图片描述">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;可以这样理解，<strong>自动装箱的过程中关闭了自动类型转换。</strong></p>
+        <h1 id="简单工厂模式"><a href="#简单工厂模式" class="headerlink" title="简单工厂模式"></a>简单工厂模式</h1><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;相信很多人都听过设计模式吧，但是也只是局限于听说。很多人认为设计模式并没啥用啊（当然也包括我），我自己写的代码也可以完成需求，为啥还要设计模式呢？<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;在你学习之后会感叹代码还可以这么写，同时也能够更加熟练的运用面向对象的思想。本系列的文章来源于《大话设计模式》，感兴趣的朋友们可以找来阅读一番，很不错的一本书。<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;直接开始正文吧，我们要实现两个数的运算，用户输入两个数字和一个操作符后，返回运算结果。</p>
+<p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;相信各位能够很容易实现该代码如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">public class Program &#123;</span><br><span class="line">    public static void main(String[] args) &#123;</span><br><span class="line">        Scanner scanner = new Scanner(System.in);</span><br><span class="line">        System.out.print(&quot;请输入数字A:&quot;);</span><br><span class="line">        String strNumA = scanner.nextLine();</span><br><span class="line">        System.out.print(&quot;请输入数字B:&quot;);</span><br><span class="line">        String strNumB = scanner.nextLine();</span><br><span class="line">        System.out.println(&quot;请输入运算符:&quot;);</span><br><span class="line">        String strOper = scanner.nextLine();</span><br><span class="line">        if(&quot;+&quot;.equals(strOper))&#123;</span><br><span class="line">            System.out.println(Double.parseDouble(strNumA) + Double.parseDouble(strNumB));</span><br><span class="line">        &#125;</span><br><span class="line">        if(&quot;-&quot;.equals(strOper))&#123;</span><br><span class="line">            System.out.println(Double.parseDouble(strNumA) - Double.parseDouble(strNumB));</span><br><span class="line">        &#125;</span><br><span class="line">        if(&quot;*&quot;.equals(strOper))&#123;</span><br><span class="line">            System.out.println(Double.parseDouble(strNumA) * Double.parseDouble(strNumB));</span><br><span class="line">        &#125;</span><br><span class="line">        if(&quot;/&quot;.equals(strOper))&#123;</span><br><span class="line">            System.out.println(Double.parseDouble(strNumA) / Double.parseDouble(strNumB));</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;但是我们可以发现，该段代码依然有很多问题，如：用户输入非法值时，我们没有进行异常处理；其次，当进行除法运算时，除数为0的话，我们也并没有进行判断；接着不断我输入哪个运算符，四个if语句都执行了，虽然说计算机运算速度，但是我们写出精炼的代码，能够让别人感觉到你的代码水平较高。<br>  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;改进后的代码如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line">public class Program &#123;</span><br><span class="line">    public static void main(String[] args) &#123;</span><br><span class="line">        Scanner scanner = new Scanner(System.in);</span><br><span class="line">        System.out.print(&quot;请输入数字A:&quot;);</span><br><span class="line">        String strNumA = scanner.nextLine();</span><br><span class="line">        System.out.print(&quot;请输入数字B:&quot;);</span><br><span class="line">        String strNumB = scanner.nextLine();</span><br><span class="line">        System.out.print(&quot;请输入运算符:&quot;);</span><br><span class="line">        String strOper = scanner.nextLine();</span><br><span class="line">        try &#123;</span><br><span class="line">           double result = 0;</span><br><span class="line">            if (&quot;+&quot;.equals(strOper)) &#123;</span><br><span class="line">                result = Double.parseDouble(strNumA) + Double.parseDouble(strNumB);</span><br><span class="line">            &#125;</span><br><span class="line">            else if (&quot;-&quot;.equals(strOper)) &#123;</span><br><span class="line">                result = Double.parseDouble(strNumA) - Double.parseDouble(strNumB);</span><br><span class="line">            &#125;</span><br><span class="line">            else if (&quot;*&quot;.equals(strOper)) &#123;</span><br><span class="line">                result = Double.parseDouble(strNumA) * Double.parseDouble(strNumB);</span><br><span class="line">            &#125;</span><br><span class="line">            else if (&quot;/&quot;.equals(strOper)) &#123;</span><br><span class="line">                if(Double.parseDouble(strNumB)!=0)</span><br><span class="line">                    result = Double.parseDouble(strNumA) / Double.parseDouble(strNumB);</span><br><span class="line">                else</span><br><span class="line">                    System.out.println(&quot;除数不能为0!&quot;);</span><br><span class="line">            &#125;else&#123;</span><br><span class="line">                System.out.println(&quot;请输入指定运算符!&quot;);</span><br><span class="line">                return;</span><br><span class="line">            &#125;</span><br><span class="line">            System.out.println(&quot;运算结果:&quot;+result);</span><br><span class="line">        &#125;catch (NumberFormatException e)&#123;</span><br><span class="line">            System.out.println(&quot;请输入合法值!&quot;);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;观察上面的代码后，是不是觉得你写的代码已经很完善了，但是这是一个完全面向过程的程序吧。面向对象的三大特征封装、继承、多态好像并没有使用吧。该段程序的耦合度很高，高质量的程序应该是耦合度很低的，所以我们应该将业务逻辑与业务逻辑无关的分离，降低彼此之间的耦合度。<br>  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;实现代码如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br></pre></td><td class="code"><pre><span class="line">public class Operation &#123;</span><br><span class="line"></span><br><span class="line">    public static double getResult(double numA,double numB,String oper) throws Exception &#123;</span><br><span class="line">        double result = 0;</span><br><span class="line">        switch (oper)&#123;</span><br><span class="line">            case &quot;+&quot;:</span><br><span class="line">                result = numA + numB;</span><br><span class="line">                break;</span><br><span class="line">            case &quot;-&quot;:</span><br><span class="line">                result = numA - numB;</span><br><span class="line">                break;</span><br><span class="line">            case &quot;*&quot;:</span><br><span class="line">                result = numA * numB;</span><br><span class="line">                break;</span><br><span class="line">            case &quot;/&quot;:</span><br><span class="line">                if(numB != 0) &#123;</span><br><span class="line">                    result = numA / numB;</span><br><span class="line">                &#125;else&#123;</span><br><span class="line">                    throw new Exception(&quot;除数不能为0!&quot;);</span><br><span class="line">                &#125;</span><br><span class="line">                break;</span><br><span class="line">            default:</span><br><span class="line">                throw new Exception(&quot;请输入指定运算符!&quot;);</span><br><span class="line">        &#125;</span><br><span class="line">        return result;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">public class Program &#123;</span><br><span class="line">    public static void main(String[] args) &#123;</span><br><span class="line">        Scanner scanner = new Scanner(System.in);</span><br><span class="line">        System.out.print(&quot;请输入数字A:&quot;);</span><br><span class="line">        String strNumA = scanner.nextLine();</span><br><span class="line">        System.out.print(&quot;请输入数字B:&quot;);</span><br><span class="line">        String strNumB = scanner.nextLine();</span><br><span class="line">        System.out.print(&quot;请输入运算符:&quot;);</span><br><span class="line">        String strOper = scanner.nextLine();</span><br><span class="line">        try &#123;</span><br><span class="line">            double result = Operation.getResult(Double.parseDouble(strNumA),Double.parseDouble(strNumB),strOper);</span><br><span class="line">            System.out.println(&quot;运算结果：&quot;+result);</span><br><span class="line">        &#125;catch (NumberFormatException e)&#123;</span><br><span class="line">            System.out.println(&quot;请输入合法值!&quot;);</span><br><span class="line">        &#125;</span><br><span class="line">        catch (Exception e)&#123;</span><br><span class="line">            System.out.println(e.getMessage());</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;如此一来，我们便将调用者与业务逻辑之间进行了解耦和。<br>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;但是，如果我们要增加其他运算呢？如求平方根，求次方的话会怎么做？相信大家的想法是在Operation类中增加case语句不就好了吗？但是这样做的话，我们得更改原程序的代码。通常来说，是很忌讳直接去修改原程序的代码。这时，我们就可以运用面向对象的其他特征了。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">public abstract class Operation &#123;</span><br><span class="line"></span><br><span class="line">    public abstract double getResult(double numA,double numB) throws Exception;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">class OperAdd extends Operation&#123;</span><br><span class="line"></span><br><span class="line">    @Override</span><br><span class="line">    public double getResult(double numA, double numB) &#123;</span><br><span class="line">        return numA + numB;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">class OperSub extends Operation&#123;</span><br><span class="line"></span><br><span class="line">    @Override</span><br><span class="line">    public double getResult(double numA, double numB) &#123;</span><br><span class="line">        return numA - numB;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">class OperMul extends Operation&#123;</span><br><span class="line"></span><br><span class="line">    @Override</span><br><span class="line">    public double getResult(double numA, double numB) &#123;</span><br><span class="line">        return numA * numB;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">class OperDiv extends Operation&#123;</span><br><span class="line"></span><br><span class="line">    @Override</span><br><span class="line">    public double getResult(double numA, double numB) throws Exception &#123;</span><br><span class="line">        if(numB == 0)</span><br><span class="line">            throw new Exception(&quot;除数不能为0!&quot;);</span><br><span class="line">        return numA / numB;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;我们通过判断运算符的类型，继承父类生成合适的子类对象，利用多态即可。这样的话，当需要其他功能时，我们只需要继续去继承父类即可。而我们生成合适子类的过程中便用到了简单工厂模式。<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;简单工厂模式示例代码如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">public class OperFactory &#123;</span><br><span class="line">    public Operation createOper(String oper) throws Exception &#123;</span><br><span class="line">        Operation operation = null;</span><br><span class="line">        switch (oper)&#123;</span><br><span class="line">            case &quot;+&quot;:</span><br><span class="line">                operation = new OperAdd();</span><br><span class="line">                break;</span><br><span class="line">            case &quot;-&quot;:</span><br><span class="line">                operation = new OperSub();</span><br><span class="line">                break;</span><br><span class="line">            case &quot;*&quot;:</span><br><span class="line">                operation = new OperMul();</span><br><span class="line">                break;</span><br><span class="line">            case &quot;/&quot;:</span><br><span class="line">                operation = new OperDiv();</span><br><span class="line">                break;</span><br><span class="line">            default:</span><br><span class="line">                throw new Exception(&quot;请输入指定运算符&quot;);</span><br><span class="line">        &#125;</span><br><span class="line">        return operation;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;当我们进行运算时，让工厂产生合适的子类对象，这样我们就可以进行运算了。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line">public class Program &#123;</span><br><span class="line">    public static void main(String[] args) &#123;</span><br><span class="line">        Scanner scanner = new Scanner(System.in);</span><br><span class="line">        System.out.print(&quot;请输入数字A:&quot;);</span><br><span class="line">        String strNumA = scanner.nextLine();</span><br><span class="line">        System.out.print(&quot;请输入数字B:&quot;);</span><br><span class="line">        String strNumB = scanner.nextLine();</span><br><span class="line">        System.out.print(&quot;请输入运算符:&quot;);</span><br><span class="line">        String strOper = scanner.nextLine();</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">        try &#123;</span><br><span class="line">            //生成工厂对象</span><br><span class="line">            OperFactory factory = new OperFactory();</span><br><span class="line">            //生成合适的子类对象</span><br><span class="line">            Operation oper = factory.createOper(strOper);</span><br><span class="line">            //利用多态进行计算</span><br><span class="line">            double result = oper.getResult(Double.parseDouble(strNumA),Double.parseDouble(strNumB));</span><br><span class="line">            System.out.println(&quot;运算结果:&quot;+result);</span><br><span class="line">        &#125;catch (NumberFormatException e)&#123;</span><br><span class="line">            System.out.println(&quot;请输入合法数字！&quot;);</span><br><span class="line">        &#125;</span><br><span class="line">        catch (Exception e) &#123;</span><br><span class="line">            e.printStackTrace();</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;这个OperFactory像不像一个工厂呢？如饮料厂生产饮料，根据用户的需求去生产合适的饮料。<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;你可能还挺过静态工厂模式，那么什么时静态工厂呢？很简单，不过是将生产子类的方法由对象方法提升至类方法，这样我们就可以不用生成工厂对象，直接通过类去调用该方法即可。<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;学习了简单工厂模式后，<strong>我们总结一下什么时候时候该设计模式，首先对需求进行分习，如上可以分离出一个抽象类：运算类。然后该类的方法在不同的条件下有不同的执行过程</strong>。那么，此时我们便可以使用简单工厂模式。</p>
 
       
     </div>
@@ -526,7 +456,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/java/" rel="tag"><i class="fa fa-google"></i>java</a>
+            <a href="/tags/简单工厂模式/" rel="tag"><i class="fa fa-google"></i>简单工厂模式</a>
           
         </div>
       
@@ -535,6 +465,22 @@
       
       
 
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/post/4cc0092f.html" rel="prev" title="java基础提高(一)">
+                java基础提高(一) <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
       
 
       
@@ -655,7 +601,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-count">2</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
@@ -666,7 +612,7 @@
               
               <div class="site-state-item site-state-categories">
                 
-                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-count">2</span>
                   <span class="site-state-item-name">categories</span>
                 
               </div>
@@ -677,7 +623,7 @@
               
               <div class="site-state-item site-state-tags">
                 
-                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-count">2</span>
                   <span class="site-state-item-name">tags</span>
                 
               </div>
@@ -726,7 +672,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Java基础提高（一）"><span class="nav-number">1.</span> <span class="nav-text">Java基础提高（一）</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-面向过程和面向对象的区别"><span class="nav-number">1.1.</span> <span class="nav-text">1.面向过程和面向对象的区别</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-JDK和JRE的区别"><span class="nav-number">1.2.</span> <span class="nav-text">2.JDK和JRE的区别</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-基本数据类型和包装类型"><span class="nav-number">1.3.</span> <span class="nav-text">3.基本数据类型和包装类型</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-自动装箱和拆箱"><span class="nav-number">1.4.</span> <span class="nav-text">4.自动装箱和拆箱</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#简单工厂模式"><span class="nav-number">1.</span> <span class="nav-text">简单工厂模式</span></a></li></ol></div>
             
 
           </div>
