@@ -94,7 +94,7 @@
 <meta property="og:site_name" content="WangZhao Blogs">
 <meta property="og:description" content="Java基础提高(二)&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;继续上次的内容，现在开始介绍Java中经常被使用的类，你不得不了解的类。 1. Object&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;我们都知道，Java是一门面向对象的语言，而面向对象的三大特征是：封装、继承、多态。在继承中，">
 <meta property="og:locale" content="Zh-Hans">
-<meta property="og:updated_time" content="2019-04-20T06:12:18.622Z">
+<meta property="og:updated_time" content="2019-04-21T04:09:31.125Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="java基础提高(二)">
 <meta name="twitter:description" content="Java基础提高(二)&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;继续上次的内容，现在开始介绍Java中经常被使用的类，你不得不了解的类。 1. Object&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;我们都知道，Java是一门面向对象的语言，而面向对象的三大特征是：封装、继承、多态。在继承中，">
@@ -390,7 +390,7 @@
                   <span class="post-meta-item-text">Words count in article&#58;</span>
                 
                 <span title="Words count in article">
-                  1,635 字
+                  1,620 字
                 </span>
               
 
@@ -406,7 +406,7 @@
                   <span class="post-meta-item-text">Reading time &asymp;</span>
                 
                 <span title="Reading time">
-                  7 分钟
+                  6 分钟
                 </span>
               
             </div>
@@ -428,7 +428,79 @@
 
       
         <h1 id="Java基础提高-二"><a href="#Java基础提高-二" class="headerlink" title="Java基础提高(二)"></a>Java基础提高(二)</h1><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;继续上次的内容，现在开始介绍Java中经常被使用的类，你不得不了解的类。</p>
-<h2 id="1-Object"><a href="#1-Object" class="headerlink" title="1. Object"></a>1. Object</h2><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;我们都知道，Java是一门面向对象的语言，而面向对象的三大特征是：封装、继承、多态。在继承中，如果我们没有直接声明一个类的父类，那么这个类的父类便是Object。所以Object类可以算是所有类的祖宗类，这便是我们不得不关注该类的原因。<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;现在我们开始进行该类方法的介绍：<br>| 权限 | 方法名  | 作用  |<br>|–|–|–|<br>| private | registerNatives() | 让JVM找到本地方法 |<br>| public | getClass() | 获得Class对象 |<br>| public | hashCode() | 获得哈希值 |<br>| public | equals(Object obj)| 比较两个对象是否相等 |<br>| protected | clone() | 克隆对象 |<br>| public | toString() | 打印该对象的信息 |<br>| public | notify() | 唤醒一个等待中的线程 |<br>| public | notifyAll() | 唤醒多个等待中的线程 |<br>| public | wait()| 让当前线程等待，并释放锁 |<br>| public | wait(long timeout) | 让当前线程等待，直到指定时间或被唤醒 |<br>| public | wait(long timeout, int nanos) | 同wait(long timeout)，time = 1000000*timeout+nanos|<br>| protected | finalize() | 被垃圾回收器清除之前执行 |<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1、在该类中，我们可以看到有一些方法被native修饰，那么为什么这些方法要被native修饰呢？我们都知道任意一种语言都希望效率越高越好，如C语言，经历了这么多年依然很流行，正是由于其与底层最接近。而面向对象的语言很难像C语言一样高效，为了在其他语言中使用C语言，便产生了native method.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2、每一个类都有一个其对应的Class对象，该对象被保存在一个同名的.class文件中。通过该Class对象，我们可以创建对象。通过该对象，我们可以获得该类的任意信息。<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3、在数组中，我们如果要寻找一个元素，如果不知道该元素的下标，那么便只能所数组头部进行搜索，这样造成的后果便是查找元素慢。倘若我们一开始就知道该元素的下标，那么我们只要找数组指定下标元素，这样效率是不是很高？而哈希值的原理便是基于此，存在这样一张哈希表，我们通过哈希值可以快速找到目标元素。<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;哈希值的常用算法：<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(1)直接定址法；<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(2)数字分析法；<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(3)平方取中法；<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(4)折叠法；<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(5)除留余数法；<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(6)随机数法；<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;是不是存在这样的疑惑？为什么需要这么多种计算方法？一种不就够了吗？这是因为对于不同类，肯定都是不相同的，那么所有的类都使用一种方法的话肯定是很不合适的。我们应该就可能避免哈希值相同的情况。</p>
+<h2 id="1-Object"><a href="#1-Object" class="headerlink" title="1. Object"></a>1. Object</h2><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;我们都知道，Java是一门面向对象的语言，而面向对象的三大特征是：封装、继承、多态。在继承中，如果我们没有直接声明一个类的父类，那么这个类的父类便是Object。所以Object类可以算是所有类的祖宗类，这便是我们不得不关注该类的原因。<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;现在我们开始进行该类方法的介绍：</p>
+<table>
+<thead>
+<tr>
+<th>权限</th>
+<th>方法名</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>private</td>
+<td>registerNatives()</td>
+<td>让JVM找到本地方法</td>
+</tr>
+<tr>
+<td>public</td>
+<td>getClass()</td>
+<td>获得Class对象</td>
+</tr>
+<tr>
+<td>public</td>
+<td>hashCode()</td>
+<td>获得哈希值</td>
+</tr>
+<tr>
+<td>public</td>
+<td>equals(Object obj)</td>
+<td>比较两个对象是否相等</td>
+</tr>
+<tr>
+<td>protected</td>
+<td>clone()</td>
+<td>克隆对象</td>
+</tr>
+<tr>
+<td>public</td>
+<td>toString()</td>
+<td>打印该对象的信息</td>
+</tr>
+<tr>
+<td>public</td>
+<td>notify()</td>
+<td>唤醒一个等待中的线程</td>
+</tr>
+<tr>
+<td>public</td>
+<td>notifyAll()</td>
+<td>唤醒多个等待中的线程</td>
+</tr>
+<tr>
+<td>public</td>
+<td>wait()</td>
+<td>让当前线程等待，并释放锁</td>
+</tr>
+<tr>
+<td>public</td>
+<td>wait(long timeout)</td>
+<td>让当前线程等待，直到指定时间或被唤醒</td>
+</tr>
+<tr>
+<td>public</td>
+<td>wait(long timeout, int nanos)</td>
+<td>同wait(long timeout)，time = 1000000*timeout+nanos</td>
+</tr>
+<tr>
+<td>protected</td>
+<td>finalize()</td>
+<td>被垃圾回收器清除之前执行</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1、在该类中，我们可以看到有一些方法被native修饰，那么为什么这些方法要被native修饰呢？我们都知道任意一种语言都希望效率越高越好，如C语言，经历了这么多年依然很流行，正是由于其与底层最接近。而面向对象的语言很难像C语言一样高效，为了在其他语言中使用C语言，便产生了native method.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2、每一个类都有一个其对应的Class对象，该对象被保存在一个同名的.class文件中。通过该Class对象，我们可以创建对象。通过该对象，我们可以获得该类的任意信息。<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3、在数组中，我们如果要寻找一个元素，如果不知道该元素的下标，那么便只能所数组头部进行搜索，这样造成的后果便是查找元素慢。倘若我们一开始就知道该元素的下标，那么我们只要找数组指定下标元素，这样效率是不是很高？而哈希值的原理便是基于此，存在这样一张哈希表，我们通过哈希值可以快速找到目标元素。<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;哈希值的常用算法：<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(1)直接定址法；<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(2)数字分析法；<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(3)平方取中法；<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(4)折叠法；<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(5)除留余数法；<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(6)随机数法；<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;是不是存在这样的疑惑？为什么需要这么多种计算方法？一种不就够了吗？这是因为对于不同类，肯定都是不相同的，那么所有的类都使用一种方法的话肯定是很不合适的。我们应该就可能避免哈希值相同的情况。</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">@Test</span><br><span class="line">   public void test()&#123;</span><br><span class="line">       String s1 = &quot;通话&quot;;</span><br><span class="line">       String s2 = &quot;重地&quot;;</span><br><span class="line">       System.out.println(s1.hashCode());</span><br><span class="line">       //输出：1179395</span><br><span class="line">       System.out.println(s2.hashCode());</span><br><span class="line">       //输出：1179395</span><br><span class="line">   &#125;</span><br></pre></td></tr></table></figure>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>通过上面可以看出，不同的对象可能会产生相同的哈希值。</strong><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4、有时候我们需要判断两个对象是否相等，那么这个时候就需要重写equal(Object o)方法。如下存在这样一个类：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">public class Student &#123;</span><br><span class="line">    private int age;</span><br><span class="line">    private String name;</span><br><span class="line"></span><br><span class="line">    public Student()&#123;</span><br><span class="line">        super();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    public Student(int age,String name)&#123;</span><br><span class="line">        this.age = age;</span><br><span class="line">        this.name = name;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
