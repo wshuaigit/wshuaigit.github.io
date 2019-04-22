@@ -94,7 +94,7 @@
 <meta property="og:site_name" content="WangZhao Blogs">
 <meta property="og:description" content="Java基础提高(二)&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;继续上次的内容，现在开始介绍Java中经常被使用的类，你不得不了解的类。 1. Object&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;我们都知道，Java是一门面向对象的语言，而面向对象的三大特征是：封装、继承、多态。在继承中，">
 <meta property="og:locale" content="Zh-Hans">
-<meta property="og:updated_time" content="2019-04-21T04:09:31.125Z">
+<meta property="og:updated_time" content="2019-04-22T03:01:13.465Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="java基础提高(二)">
 <meta name="twitter:description" content="Java基础提高(二)&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;继续上次的内容，现在开始介绍Java中经常被使用的类，你不得不了解的类。 1. Object&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;我们都知道，Java是一门面向对象的语言，而面向对象的三大特征是：封装、继承、多态。在继承中，">
@@ -390,7 +390,7 @@
                   <span class="post-meta-item-text">Words count in article&#58;</span>
                 
                 <span title="Words count in article">
-                  1,620 字
+                  1,676 字
                 </span>
               
 
@@ -406,7 +406,7 @@
                   <span class="post-meta-item-text">Reading time &asymp;</span>
                 
                 <span title="Reading time">
-                  6 分钟
+                  7 分钟
                 </span>
               
             </div>
@@ -517,7 +517,9 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Student s1 = new Student(20,&quot;张三&quot;);</span><br><span class="line">      System.out.println(s1);</span><br></pre></td></tr></table></figure>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;输出：Student@bd555<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;如果我们不重写toString()的话，默认调用父类的toString()。代码如下：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">public String toString() &#123;</span><br><span class="line">       return getClass().getName() + &quot;@&quot; + Integer.toHexString(hashCode());</span><br><span class="line">   &#125;</span><br></pre></td></tr></table></figure>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;默认为：<strong><em>类名 + @ + 十六进制哈希值</em></strong><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>注意：这里的十六进制值并不是该对象在内存中的值</strong>，很多人认为这是地址值，哈希算法由我们自己写，我们怎么可能决定内存地址呢？<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;7、在C语言中，如果我们想要释放内存的话，必须手动进行释放。但是Java简化了这一过程，由垃圾回收器替我们完成。而重写finalize()后，当垃圾回收器清理没有被引用的对象时，会执行该方法。</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;默认为：<strong><em>类名 + @ + 十六进制哈希值</em></strong><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>注意：很多人认为hashCode的值就是地址值，这一说法并不完全正确</strong>，因为在我们进行hashCode方法重写时，哈希算法由我们自己写，我们怎么可能决定内存地址呢？但是对于Object类来说，确实时将地址转为int值。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">(This is typically implemented by converting the internal</span><br><span class="line">address of the object into an integer, but this implementation</span><br><span class="line">technique is not required by the</span><br><span class="line">Java&amp;trade; programming language.)</span><br></pre></td></tr></table></figure>
+<p>7、在C语言中，如果我们想要释放内存的话，必须手动进行释放。但是Java简化了这一过程，由垃圾回收器替我们完成。而重写finalize()后，当垃圾回收器清理没有被引用的对象时，会执行该方法。</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">@Override</span><br><span class="line">   protected void finalize() throws Throwable &#123;</span><br><span class="line">       System.out.println(&quot;执行finalize()方法&quot;);</span><br><span class="line">   &#125;</span><br></pre></td></tr></table></figure>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">public static void main(String[] args) throws CloneNotSupportedException &#123;</span><br><span class="line">    new Student(20,&quot;张三&quot;);</span><br><span class="line">    new Student(20,&quot;张三&quot;);</span><br><span class="line">    new Student(20,&quot;张三&quot;);</span><br><span class="line"></span><br><span class="line">    System.gc();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;调用该方法后，可能会有如下输出：</p>
