@@ -75,7 +75,7 @@
 
 
 
-  <meta name="keywords" content="java,">
+  <meta name="keywords" content="Hexo, NexT">
 
 
 
@@ -86,18 +86,21 @@
 
 
 
-<meta name="description" content="Java基础提高(二)&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;继续上次的内容，现在开始介绍Java中经常被使用的类，你不得不了解的类。 1. Object&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;我们都知道，Java是一门面向对象的语言，而面向对象的三大特征是：封装、继承、多态。在继承中，">
-<meta name="keywords" content="java">
+<meta name="description" content="Java基础提高(三) &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;本次开始介绍String类及其相关类，String首先声明这是一个引用类型。很多学习了一段时间Java的人依然认为这是一个基本类型，大概是因为像基本类型一样经常使用吧。但必须知道这并不是基本类型，而是引用类型，否则人家问你时不是闹了个笑话吗？  1.String&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nb">
 <meta property="og:type" content="article">
-<meta property="og:title" content="java基础提高(二)">
-<meta property="og:url" content="https://wshuaigit.github.io/post/e3f1924d.html">
+<meta property="og:title" content="java基础提高(三)">
+<meta property="og:url" content="https://wshuaigit.github.io/post/9d02b266.html">
 <meta property="og:site_name" content="WangZhao Blogs">
-<meta property="og:description" content="Java基础提高(二)&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;继续上次的内容，现在开始介绍Java中经常被使用的类，你不得不了解的类。 1. Object&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;我们都知道，Java是一门面向对象的语言，而面向对象的三大特征是：封装、继承、多态。在继承中，">
+<meta property="og:description" content="Java基础提高(三) &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;本次开始介绍String类及其相关类，String首先声明这是一个引用类型。很多学习了一段时间Java的人依然认为这是一个基本类型，大概是因为像基本类型一样经常使用吧。但必须知道这并不是基本类型，而是引用类型，否则人家问你时不是闹了个笑话吗？  1.String&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nb">
 <meta property="og:locale" content="Zh-Hans">
-<meta property="og:updated_time" content="2019-04-22T03:01:13.465Z">
+<meta property="og:image" content="https://wshuaigit.github.io/images/1.png">
+<meta property="og:image" content="https://wshuaigit.github.io/images/2.png">
+<meta property="og:image" content="https://wshuaigit.github.io/images/3.png">
+<meta property="og:updated_time" content="2019-04-23T13:10:53.938Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="java基础提高(二)">
-<meta name="twitter:description" content="Java基础提高(二)&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;继续上次的内容，现在开始介绍Java中经常被使用的类，你不得不了解的类。 1. Object&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;我们都知道，Java是一门面向对象的语言，而面向对象的三大特征是：封装、继承、多态。在继承中，">
+<meta name="twitter:title" content="java基础提高(三)">
+<meta name="twitter:description" content="Java基础提高(三) &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;本次开始介绍String类及其相关类，String首先声明这是一个引用类型。很多学习了一段时间Java的人依然认为这是一个基本类型，大概是因为像基本类型一样经常使用吧。但必须知道这并不是基本类型，而是引用类型，否则人家问你时不是闹了个笑话吗？  1.String&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nb">
+<meta name="twitter:image" content="https://wshuaigit.github.io/images/1.png">
 
 
 
@@ -127,13 +130,13 @@
 
 
 
-  <link rel="canonical" href="https://wshuaigit.github.io/post/e3f1924d.html">
+  <link rel="canonical" href="https://wshuaigit.github.io/post/9d02b266.html">
 
 
 
 
 
-  <title>java基础提高(二) | WangZhao Blogs</title>
+  <title>java基础提高(三) | WangZhao Blogs</title>
   
 
 
@@ -292,7 +295,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://wshuaigit.github.io/post/e3f1924d.html">
+    <link itemprop="mainEntityOfPage" href="https://wshuaigit.github.io/post/9d02b266.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Wang Zhao">
@@ -309,7 +312,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">java基础提高(二)</h1>
+          <h1 class="post-title" itemprop="name headline">java基础提高(三)</h1>
         
 
         <div class="post-meta">
@@ -321,8 +324,8 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-04-20T14:11:14+08:00">
-                2019-04-20
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-04-23T21:02:51+08:00">
+                2019-04-23
               </time>
             
 
@@ -332,28 +335,6 @@
           </span>
 
           
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/java/" itemprop="url" rel="index">
-                    <span itemprop="name">java</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
 
           
             
@@ -362,8 +343,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/post/e3f1924d.html#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count gitment-comments-count" data-xid="/post/e3f1924d.html" itemprop="commentsCount"></span>
+                <a href="/post/9d02b266.html#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count gitment-comments-count" data-xid="/post/9d02b266.html" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -390,7 +371,7 @@
                   <span class="post-meta-item-text">Words count in article&#58;</span>
                 
                 <span title="Words count in article">
-                  1,676 字
+                  1,889 字
                 </span>
               
 
@@ -406,7 +387,7 @@
                   <span class="post-meta-item-text">Reading time &asymp;</span>
                 
                 <span title="Reading time">
-                  7 分钟
+                  8 分钟
                 </span>
               
             </div>
@@ -427,104 +408,71 @@
       
 
       
-        <h1 id="Java基础提高-二"><a href="#Java基础提高-二" class="headerlink" title="Java基础提高(二)"></a>Java基础提高(二)</h1><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;继续上次的内容，现在开始介绍Java中经常被使用的类，你不得不了解的类。</p>
-<h2 id="1-Object"><a href="#1-Object" class="headerlink" title="1. Object"></a>1. Object</h2><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;我们都知道，Java是一门面向对象的语言，而面向对象的三大特征是：封装、继承、多态。在继承中，如果我们没有直接声明一个类的父类，那么这个类的父类便是Object。所以Object类可以算是所有类的祖宗类，这便是我们不得不关注该类的原因。<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;现在我们开始进行该类方法的介绍：</p>
+        <h1 id="Java基础提高-三"><a href="#Java基础提高-三" class="headerlink" title="Java基础提高(三)"></a>Java基础提高(三)</h1><blockquote>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;本次开始介绍String类及其相关类，String首先声明这是一个引用类型。很多学习了一段时间Java的人依然认为这是一个基本类型，大概是因为像基本类型一样经常使用吧。但必须知道<strong>这并不是基本类型，而是引用类型</strong>，否则人家问你时不是闹了个笑话吗？</p>
+</blockquote>
+<h2 id="1-String"><a href="#1-String" class="headerlink" title="1.String"></a>1.String</h2><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;为什么要介绍String，因为在我们的程序代码中，会经常用到String，而String存在一些知识盲区你可能并不了解。<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;首先要知道的是该类是一个final类，即你并不能去继承该类。为什么要这样设计？我个人有两点看法：（1）因为sun认为该类已经很完美了，不需要被继承；2）我们在传输数据时，大量的用到字符串，如果你继承String，却不能够严谨完善的实现其功能，容易造成数据不安全。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">final</span> <span class="class"><span class="keyword">class</span> <span class="title">String</span></span></span><br></pre></td></tr></table></figure>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;其次，我们都知道String是一个不可变字符串，那么为什么是不可变字符串？是因为String数组内部封装了一个final数组？</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">private</span> <span class="keyword">final</span> <span class="keyword">char</span> value[];</span><br></pre></td></tr></table></figure>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;对于被final修饰的引用类型，只是其地址值不可以改变，那么其数组下标中的元素可以改变吗？答案是可以的，如下所示：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> <span class="keyword">throws</span> NoSuchFieldException, IllegalAccessException </span>&#123;</span><br><span class="line">        String s = <span class="string">"abcd"</span>;</span><br><span class="line">        <span class="comment">//获得Class对象</span></span><br><span class="line">        Class c = s.getClass();</span><br><span class="line">        <span class="comment">//让s1和s的地址相同，判断反射改变String的值后地址有没有发生变化</span></span><br><span class="line">        String s1 = s;</span><br><span class="line">        <span class="comment">//输出true</span></span><br><span class="line">        System.out.println(s1 == s);</span><br><span class="line">        <span class="comment">//获得String的成员变量，即final数组</span></span><br><span class="line">        Field value = c.getDeclaredField(<span class="string">"value"</span>);</span><br><span class="line">        <span class="comment">//因为数组为private，所以需要取消语法检查</span></span><br><span class="line">        value.setAccessible(<span class="keyword">true</span>);</span><br><span class="line">        <span class="keyword">char</span>[] array = (<span class="keyword">char</span>[])value.get(s);</span><br><span class="line">        <span class="comment">//输出[a, b, c, d]</span></span><br><span class="line">        System.out.println(Arrays.toString(array));</span><br><span class="line">        <span class="comment">//输出abcd</span></span><br><span class="line">        System.out.println(s);</span><br><span class="line">        array[<span class="number">3</span>] = <span class="string">'a'</span>;</span><br><span class="line">        <span class="comment">//[a, b, c, a]</span></span><br><span class="line">        System.out.println(Arrays.toString(array));</span><br><span class="line">        <span class="comment">//输出abca</span></span><br><span class="line">        System.out.println(s);</span><br><span class="line">        <span class="comment">//输出true</span></span><br><span class="line">        System.out.println(s1 == s);</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;注意最后输出的是true，那么则说明地址并没有发生变化，我们确实改变了String的值。<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;那么事情这么简单吗？如果我们打印hashCode会有变化吗？运行后发现hashCode的值并没有发生变化，这是为什么呢？要知道不在反射的情况下，这两个的字符串的hashCode并不相同？这是因为在我们创建String对象的时候，便已经计算了hashCode的值？如下：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="title">String</span><span class="params">(String original)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">this</span>.value = original.value;</span><br><span class="line">    <span class="keyword">this</span>.hash = original.hash;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;而我们在反射的过程中，并没有进行hashCode值的更新，所以如果要反射更换值时要更新hashCode，同时只能改变数组元素的值。<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;存在如下一组代码：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">String s1 = <span class="string">"abc"</span>;</span><br><span class="line">      String s2 = <span class="string">"abc"</span>;</span><br><span class="line">      String s3 = <span class="keyword">new</span> String(<span class="string">"abc"</span>);</span><br><span class="line">      System.out.println(s1 == s2);</span><br><span class="line">      System.out.println(s1 == s3);</span><br></pre></td></tr></table></figure>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;输出：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">true</span></span><br><span class="line"><span class="keyword">true</span></span><br></pre></td></tr></table></figure>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;这是因为以非 new 的方式创建String时，首先到字符串常量池中查找目标字符串。若不存在，则在常量池中直接创建该字符串并返回引用。若存在，则直接返回返回引用。<br><img src="../images/1.png" alt="在这里插入图片描述"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;而执行到String s3 = new String(“abc”);时，我们每一次new时，都是在堆中创建对象，又因为字符串常量池已经存在目标值，所以内存图如下：<br><img src="../images/2.png" alt="在这里插入图片描述"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;在我们使用new创建字符串时，如果目标串不在字符串常量池时，会将目标串加到字符串常量池中，然后继续在堆中分配内存。<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;在这里留下一个问题，即如果我们以下面这种方式创建字符串的话，那么会不会将字符串加入到常量池中？</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">String s = <span class="keyword">new</span> String(<span class="string">"a"</span>)+<span class="keyword">new</span> String(<span class="string">"b"</span>);</span><br></pre></td></tr></table></figure>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;首先可以明确的知道”a”和”b”在字符串常量池中，那么”ab”在不在字符串常量池中呢？我们待会进行验证。<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;String类中存在这样一个方法intern()</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">     * Returns a canonical representation for the string object.</span></span><br><span class="line"><span class="comment">     * &lt;p&gt;</span></span><br><span class="line"><span class="comment">     * A pool of strings, initially empty, is maintained privately by the</span></span><br><span class="line"><span class="comment">     * class &#123;<span class="doctag">@code</span> String&#125;.</span></span><br><span class="line"><span class="comment">     * &lt;p&gt;</span></span><br><span class="line"><span class="comment">     * When the intern method is invoked, if the pool already contains a</span></span><br><span class="line"><span class="comment">     * string equal to this &#123;<span class="doctag">@code</span> String&#125; object as determined by</span></span><br><span class="line"><span class="comment">     * the &#123;<span class="doctag">@link</span> #equals(Object)&#125; method, then the string from the pool is</span></span><br><span class="line"><span class="comment">     * returned. Otherwise, this &#123;<span class="doctag">@code</span> String&#125; object is added to the</span></span><br><span class="line"><span class="comment">     * pool and a reference to this &#123;<span class="doctag">@code</span> String&#125; object is returned.</span></span><br><span class="line"><span class="comment">     * &lt;p&gt;</span></span><br><span class="line"><span class="comment">     * It follows that for any two strings &#123;<span class="doctag">@code</span> s&#125; and &#123;<span class="doctag">@code</span> t&#125;,</span></span><br><span class="line"><span class="comment">     * &#123;<span class="doctag">@code</span> s.intern() == t.intern()&#125; is &#123;<span class="doctag">@code</span> true&#125;</span></span><br><span class="line"><span class="comment">     * if and only if &#123;<span class="doctag">@code</span> s.equals(t)&#125; is &#123;<span class="doctag">@code</span> true&#125;.</span></span><br><span class="line"><span class="comment">     * &lt;p&gt;</span></span><br><span class="line"><span class="comment">     * All literal strings and string-valued constant expressions are</span></span><br><span class="line"><span class="comment">     * interned. String literals are defined in section 3.10.5 of the</span></span><br><span class="line"><span class="comment">     * &lt;cite&gt;The Java&amp;trade; Language Specification&lt;/cite&gt;.</span></span><br><span class="line"><span class="comment">     *</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@return</span>  a string that has the same contents as this string, but is</span></span><br><span class="line"><span class="comment">     *          guaranteed to be from a pool of unique strings.</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">native</span> String <span class="title">intern</span><span class="params">()</span></span>;</span><br></pre></td></tr></table></figure>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;从注释可知，<strong>当我们调用这个方法时，如果常量池中存在和目标串相同的值，则返回常量池中的地址。否则，直接返回引用，并且将目标串加入到字符串常量池中</strong>。示例如下：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">String s1 = <span class="keyword">new</span> String(<span class="string">"ab"</span>);</span><br><span class="line">      String s2 = s1.intern();</span><br><span class="line">      System.out.println(s1 == s2);</span><br><span class="line">      <span class="comment">// 输出：false</span></span><br></pre></td></tr></table></figure>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;内存图如下：<br><img src="../images/3.png" alt="在这里插入图片描述"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;所以这里输出的是false。现在回到我们上面的问题，当我们以 + 进行字符串拼接时会不会加入到字符串常量池中？示例代码如下：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">String s1 = <span class="keyword">new</span> String(<span class="string">"a"</span>) + <span class="keyword">new</span> String(<span class="string">"b"</span>);</span><br><span class="line">   String s2 = s1.intern();</span><br><span class="line">   System.out.println(s1 == s2);</span><br><span class="line">   <span class="comment">// 输出：true</span></span><br></pre></td></tr></table></figure>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>即我们在执行String s1 = new String(“a”) + new String(“b”);并不会将”ab”加入到字符串常量池中。</strong></p>
+<h2 id="2-StringBuilder"><a href="#2-StringBuilder" class="headerlink" title="2.StringBuilder"></a>2.StringBuilder</h2><blockquote>
+<pre><code>&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;正是由于String是不可变字符串，我们对String的每一次修改操作都产生了新的String。这样有时不符合我们的需求，所以便又产生了可变字符串。StringBuilder和StringBuffer。
+</code></pre></blockquote>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;首先需要声明的便是<strong>StringBuild是可变字符串</strong>，接着我们开始研究其源码。通过观察源码后，发现StringBuild通过继承AbstractStringBuilder获得其成员变量，而AbstractStringBuilder存在一个char数组。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">abstract</span> <span class="class"><span class="keyword">class</span> <span class="title">AbstractStringBuilder</span> <span class="keyword">implements</span> <span class="title">Appendable</span>, <span class="title">CharSequence</span> </span>&#123;</span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * The value is used for character storage.</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="keyword">char</span>[] value;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * The count is the number of characters used.</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="keyword">int</span> count;</span><br></pre></td></tr></table></figure>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;在我们创建StringBuild数组时，<strong>默认创建一个长度为16的字符数组</strong>。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="title">StringBuilder</span><span class="params">()</span> </span>&#123;</span><br><span class="line">      <span class="keyword">super</span>(<span class="number">16</span>);</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;在我们给StringBuild添加元素时，有人认为是将整体放入数组中的下标，通过观察源码这是并不是正确。如下：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">StringBuilder sb = <span class="keyword">new</span> StringBuilder();</span><br><span class="line">   sb.append(<span class="number">123</span>);</span><br><span class="line">   System.out.println(sb.length());</span><br></pre></td></tr></table></figure>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;并不是将123整个放入数组中的元素，而是分割开,分别放入数组中的元素。</p>
+<h2 id="3-StringBuffer"><a href="#3-StringBuffer" class="headerlink" title="3.StringBuffer"></a>3.StringBuffer</h2><blockquote>
+<p>   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;如果你观察StringBuffer的源码，发现StringBuilder的差别几乎没有，唯一的大区别大概就是StringBuffer中的方法被synchronized，而synchronized的作用就是为了保证线程安全。</p>
+</blockquote>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;什么是线程安全问题？即多个线程同时对一份资源进行读写操作（注意：只进行读操作并不会产生线程安全问题），这样会导致数据混乱。<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;而在多线程环境下，我们可以通过synchronized实现每次对一份资源进行读写操作只有一个线程执行。<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;所以StringBuffer与StringBuild最大的区别就是线程是否安全。</p>
 <table>
 <thead>
 <tr>
-<th>权限</th>
-<th>方法名</th>
-<th>作用</th>
+<th>类</th>
+<th>是否线程安全</th>
+<th>是否可变</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>private</td>
-<td>registerNatives()</td>
-<td>让JVM找到本地方法</td>
+<td>String</td>
+<td>安全</td>
+<td>不可变</td>
 </tr>
 <tr>
-<td>public</td>
-<td>getClass()</td>
-<td>获得Class对象</td>
+<td>StringBuilder</td>
+<td>不安全</td>
+<td>可变</td>
 </tr>
 <tr>
-<td>public</td>
-<td>hashCode()</td>
-<td>获得哈希值</td>
-</tr>
-<tr>
-<td>public</td>
-<td>equals(Object obj)</td>
-<td>比较两个对象是否相等</td>
-</tr>
-<tr>
-<td>protected</td>
-<td>clone()</td>
-<td>克隆对象</td>
-</tr>
-<tr>
-<td>public</td>
-<td>toString()</td>
-<td>打印该对象的信息</td>
-</tr>
-<tr>
-<td>public</td>
-<td>notify()</td>
-<td>唤醒一个等待中的线程</td>
-</tr>
-<tr>
-<td>public</td>
-<td>notifyAll()</td>
-<td>唤醒多个等待中的线程</td>
-</tr>
-<tr>
-<td>public</td>
-<td>wait()</td>
-<td>让当前线程等待，并释放锁</td>
-</tr>
-<tr>
-<td>public</td>
-<td>wait(long timeout)</td>
-<td>让当前线程等待，直到指定时间或被唤醒</td>
-</tr>
-<tr>
-<td>public</td>
-<td>wait(long timeout, int nanos)</td>
-<td>同wait(long timeout)，time = 1000000*timeout+nanos</td>
-</tr>
-<tr>
-<td>protected</td>
-<td>finalize()</td>
-<td>被垃圾回收器清除之前执行</td>
+<td>StringBuffer</td>
+<td>安全</td>
+<td>可变</td>
 </tr>
 </tbody>
 </table>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1、在该类中，我们可以看到有一些方法被native修饰，那么为什么这些方法要被native修饰呢？我们都知道任意一种语言都希望效率越高越好，如C语言，经历了这么多年依然很流行，正是由于其与底层最接近。而面向对象的语言很难像C语言一样高效，为了在其他语言中使用C语言，便产生了native method.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2、每一个类都有一个其对应的Class对象，该对象被保存在一个同名的.class文件中。通过该Class对象，我们可以创建对象。通过该对象，我们可以获得该类的任意信息。<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3、在数组中，我们如果要寻找一个元素，如果不知道该元素的下标，那么便只能所数组头部进行搜索，这样造成的后果便是查找元素慢。倘若我们一开始就知道该元素的下标，那么我们只要找数组指定下标元素，这样效率是不是很高？而哈希值的原理便是基于此，存在这样一张哈希表，我们通过哈希值可以快速找到目标元素。<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;哈希值的常用算法：<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(1)直接定址法；<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(2)数字分析法；<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(3)平方取中法；<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(4)折叠法；<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(5)除留余数法；<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(6)随机数法；<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;是不是存在这样的疑惑？为什么需要这么多种计算方法？一种不就够了吗？这是因为对于不同类，肯定都是不相同的，那么所有的类都使用一种方法的话肯定是很不合适的。我们应该就可能避免哈希值相同的情况。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">@Test</span><br><span class="line">   public void test()&#123;</span><br><span class="line">       String s1 = &quot;通话&quot;;</span><br><span class="line">       String s2 = &quot;重地&quot;;</span><br><span class="line">       System.out.println(s1.hashCode());</span><br><span class="line">       //输出：1179395</span><br><span class="line">       System.out.println(s2.hashCode());</span><br><span class="line">       //输出：1179395</span><br><span class="line">   &#125;</span><br></pre></td></tr></table></figure>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>通过上面可以看出，不同的对象可能会产生相同的哈希值。</strong><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4、有时候我们需要判断两个对象是否相等，那么这个时候就需要重写equal(Object o)方法。如下存在这样一个类：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">public class Student &#123;</span><br><span class="line">    private int age;</span><br><span class="line">    private String name;</span><br><span class="line"></span><br><span class="line">    public Student()&#123;</span><br><span class="line">        super();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    public Student(int age,String name)&#123;</span><br><span class="line">        this.age = age;</span><br><span class="line">        this.name = name;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;我们要判断这两个对象是否值相等，可以这样做：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">public static void main(String[] args) &#123;</span><br><span class="line">       Student s1 = new Student(20,&quot;张三&quot;);</span><br><span class="line">       Student s2 = new Student(20,&quot;张三&quot;);</span><br><span class="line">       </span><br><span class="line">       System.out.println(s1.equals(s2));</span><br><span class="line">   &#125;</span><br></pre></td></tr></table></figure>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;答案是false，为什么两个对象值相等，比较或却是false呢？因为我们没有重写equals(Object o)方法，调用的是父类Object的方法,代码如下：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">public boolean equals(Object obj) &#123;</span><br><span class="line">       return (this == obj);</span><br><span class="line">   &#125;</span><br></pre></td></tr></table></figure>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;由于两个对象都是在堆中new出的，所以他们有不同的地址，而==对于引用类型来说比较的是地址，所以答案是false。<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;那么我们不想比较地址，就只能重写equals方法了，如下：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">@Override</span><br><span class="line">   public boolean equals(Object o) &#123;</span><br><span class="line">       if (this == o) return true;</span><br><span class="line">       if (o == null || getClass() != o.getClass()) return false;</span><br><span class="line"></span><br><span class="line">       Student student = (Student) o;</span><br><span class="line"></span><br><span class="line">       if (age != student.age) return false;</span><br><span class="line">       return name != null ? name.equals(student.name) : student.name == null;</span><br><span class="line"></span><br><span class="line">   &#125;</span><br><span class="line">   </span><br><span class="line">   @Override</span><br><span class="line">   public int hashCode() &#123;</span><br><span class="line">       int result = age;</span><br><span class="line">       result = 31 * result + (name != null ? name.hashCode() : 0);</span><br><span class="line">       return result;</span><br><span class="line">   &#125;</span><br></pre></td></tr></table></figure>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;通常来说，我们会同时重写equlas方法和hashCode方法。<strong>哈希值相等但不一定是同一个对象，同一个对象一定哈希值相等。</strong><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5、克隆对象，以上面的类为例，我们要使用clone()方法需实现 Cloneable 接口。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">public static void main(String[] args) throws CloneNotSupportedException &#123;</span><br><span class="line">        Student s1 = new Student(20,&quot;张三&quot;);</span><br><span class="line">        Student s2 = (Student)s1.clone();</span><br><span class="line">        System.out.println(s1 == s2 );</span><br><span class="line">        System.out.println(s1.equals(s2));</span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;输出如下：false<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; true</p>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;可以看出，clone方法只是将值复制过去，地址并不相同。<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;6、打印对象的信息，如果我们直接输出对象，调用toString()方法。如下：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Student s1 = new Student(20,&quot;张三&quot;);</span><br><span class="line">      System.out.println(s1);</span><br></pre></td></tr></table></figure>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;输出：Student@bd555<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;如果我们不重写toString()的话，默认调用父类的toString()。代码如下：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">public String toString() &#123;</span><br><span class="line">       return getClass().getName() + &quot;@&quot; + Integer.toHexString(hashCode());</span><br><span class="line">   &#125;</span><br></pre></td></tr></table></figure>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;默认为：<strong><em>类名 + @ + 十六进制哈希值</em></strong><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>注意：很多人认为hashCode的值就是地址值，这一说法并不完全正确</strong>，因为在我们进行hashCode方法重写时，哈希算法由我们自己写，我们怎么可能决定内存地址呢？但是对于Object类来说，确实时将地址转为int值。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">(This is typically implemented by converting the internal</span><br><span class="line">address of the object into an integer, but this implementation</span><br><span class="line">technique is not required by the</span><br><span class="line">Java&amp;trade; programming language.)</span><br></pre></td></tr></table></figure>
-<p>7、在C语言中，如果我们想要释放内存的话，必须手动进行释放。但是Java简化了这一过程，由垃圾回收器替我们完成。而重写finalize()后，当垃圾回收器清理没有被引用的对象时，会执行该方法。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">@Override</span><br><span class="line">   protected void finalize() throws Throwable &#123;</span><br><span class="line">       System.out.println(&quot;执行finalize()方法&quot;);</span><br><span class="line">   &#125;</span><br></pre></td></tr></table></figure>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">public static void main(String[] args) throws CloneNotSupportedException &#123;</span><br><span class="line">    new Student(20,&quot;张三&quot;);</span><br><span class="line">    new Student(20,&quot;张三&quot;);</span><br><span class="line">    new Student(20,&quot;张三&quot;);</span><br><span class="line"></span><br><span class="line">    System.gc();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;调用该方法后，可能会有如下输出：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">执行finalize()方法</span><br><span class="line">执行finalize()方法</span><br><span class="line">执行finalize()方法</span><br></pre></td></tr></table></figure>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;如果并没有进行输出的话，也很正常，尝试多运行几次。因为System.gc()的作用只是提醒虚拟机应该进行清理垃圾了，但虚拟机并不一定会听取。<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;与线程相关的方法在后期详细介绍。</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;个人博客：<a href="https://wshuaigit.github.io/">https://wshuaigit.github.io/</a></p>
 
       
     </div>
@@ -540,12 +488,6 @@
 
     <footer class="post-footer">
       
-        <div class="post-tags">
-          
-            <a href="/tags/java/" rel="tag"><i class="fa fa-google"></i>java</a>
-          
-        </div>
-      
 
       
       
@@ -555,8 +497,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/post/4cc0092f.html" rel="next" title="设计模式--简单工厂模式">
-                <i class="fa fa-chevron-left"></i> 设计模式--简单工厂模式
+              <a href="/post/e3f1924d.html" rel="next" title="java基础提高(二)">
+                <i class="fa fa-chevron-left"></i> java基础提高(二)
               </a>
             
           </div>
@@ -564,10 +506,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/post/9d02b266.html" rel="prev" title="java基础提高(三)">
-                java基础提高(三) <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -762,7 +700,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Java基础提高-二"><span class="nav-number">1.</span> <span class="nav-text">Java基础提高(二)</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-Object"><span class="nav-number">1.1.</span> <span class="nav-text">1. Object</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Java基础提高-三"><span class="nav-number">1.</span> <span class="nav-text">Java基础提高(三)</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-String"><span class="nav-number">1.1.</span> <span class="nav-text">1.String</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-StringBuilder"><span class="nav-number">1.2.</span> <span class="nav-text">2.StringBuilder</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-StringBuffer"><span class="nav-number">1.3.</span> <span class="nav-text">3.StringBuffer</span></a></li></ol></li></ol></div>
             
 
           </div>
