@@ -439,13 +439,13 @@
 <ol start="2">
 <li>不能被final修饰</li>
 </ol>
-<p><img src="../images/8.png" alt="在这里插入图片描述"></p>
+<p><img src="/post/../images/8.png" alt="在这里插入图片描述"></p>
 <ol start="3">
 <li>可以不包含方法的实现体</li>
 </ol>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">abstract</span> <span class="class"><span class="keyword">class</span> <span class="title">Person</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">	<span class="comment">//如果方法被abstract修饰,说明这是一个抽象方法</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">abstract</span> <span class="keyword">void</span> <span class="title">sayHello</span><span class="params">()</span></span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <ol start="4">
-<li>不能实例化<br><img src="../images/9.png" alt="在这里插入图片描述"></li>
+<li>不能实例化<br><img src="/post/../images/9.png" alt="在这里插入图片描述"></li>
 </ol>
 <blockquote>
 <p>抽象类与普通类的区别除以上区别后,并没有其他区别,即普通类可以有的,抽象类同样可以拥有.</p>
@@ -456,7 +456,7 @@
 </ol>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Student</span> <span class="keyword">extends</span> <span class="title">Person</span></span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">sayHello</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        System.out.println(getClass().getName()+<span class="string">":sayHello"</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <ol start="2">
-<li>子类没有重写抽象方法<br><img src="../images/10.png" alt="在这里插入图片描述"><br>如果我们没有去重写其抽象方法,则其子类还是抽象类.</li>
+<li>子类没有重写抽象方法<br><img src="/post/../images/10.png" alt="在这里插入图片描述"><br>如果我们没有去重写其抽象方法,则其子类还是抽象类.</li>
 </ol>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">abstract</span> <span class="class"><span class="keyword">class</span> <span class="title">Teacher</span> <span class="keyword">extends</span> <span class="title">Person</span></span>&#123;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <h2 id="3-抽象类不可以实例化-其构造器作用"><a href="#3-抽象类不可以实例化-其构造器作用" class="headerlink" title="3. 抽象类不可以实例化,其构造器作用?"></a>3. 抽象类不可以实例化,其构造器作用?</h2><p>示例代码如下:</p>
@@ -552,6 +552,10 @@ Student:sayHello
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/post/dc79d497.html" rel="prev" title="Java基础提高（五）--ArrayList">
+                Java基础提高（五）--ArrayList <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -675,7 +679,7 @@ Student:sayHello
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">5</span>
+                  <span class="site-state-item-count">6</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
@@ -697,7 +701,7 @@ Student:sayHello
               
               <div class="site-state-item site-state-tags">
                 
-                  <span class="site-state-item-count">4</span>
+                  <span class="site-state-item-count">6</span>
                   <span class="site-state-item-name">tags</span>
                 
               </div>

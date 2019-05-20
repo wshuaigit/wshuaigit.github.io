@@ -98,7 +98,7 @@
 <meta property="og:image" content="https://wshuaigit.github.io/images/5.png">
 <meta property="og:image" content="https://wshuaigit.github.io/images/6.png">
 <meta property="og:image" content="https://wshuaigit.github.io/images/7.png">
-<meta property="og:updated_time" content="2019-04-23T13:14:57.157Z">
+<meta property="og:updated_time" content="2019-05-20T02:41:47.227Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="java基础提高(一)">
 <meta name="twitter:description" content="Java基础提高（一）最近开始Java的复习，弥补一下从前的知识盲区且深入底层去学习Java，通过了解源码更加深入的去了解Java。 1.面向过程和面向对象的区别&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;我们都知道C语言是一门完全面向过程的语言，当我们要是实现某些需求时，我们更在意的是如何通过一个函数去实现该需求。&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nb">
@@ -491,7 +491,7 @@
 </tr>
 </tbody>
 </table>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;说明：<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1、boolean类型所占的存储空间的大小没有明确知道，仅定义为能够取字面值true或false。<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2、一个boolean变量在编译后以一个int代替，一个boolean数组编译后，数组中每个成员是一个byte。<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3、《Java编程思想》中将void列为基本类型，但是其他资料并没有认为void是基本类型，Void的源码中说明该类是一个占位符类。<br><img src="../images/4.png" alt="在这里插入图片描述"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4、在Java中，认为一切皆对象，但是由于基本类型并不是对象，便引入了包装类型，实现基本类型和包装类型的相互转化。<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5、基本类型和包装类型的区别：<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(一)初值不同，如boolean的初值为false,int的初值为0，而包装类型的初值为null(注意：这里的初值是位于类中的成员变量而不是方法中的变量，方法中的变量必须赋初值才能使用)；<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(二)存储位置不同，基本类型存储位置在栈中，而包装类型的存储位置位于堆中；<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(三)在与集合类共同使用时，必须使用包装类型。</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;说明：<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1、boolean类型所占的存储空间的大小没有明确知道，仅定义为能够取字面值true或false。<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2、一个boolean变量在编译后以一个int代替，一个boolean数组编译后，数组中每个成员是一个byte。<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3、《Java编程思想》中将void列为基本类型，但是其他资料并没有认为void是基本类型，Void的源码中说明该类是一个占位符类。<br><img src="/post/../images/4.png" alt="在这里插入图片描述"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4、在Java中，认为一切皆对象，但是由于基本类型并不是对象，便引入了包装类型，实现基本类型和包装类型的相互转化。<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5、基本类型和包装类型的区别：<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(一)初值不同，如boolean的初值为false,int的初值为0，而包装类型的初值为null(注意：这里的初值是位于类中的成员变量而不是方法中的变量，方法中的变量必须赋初值才能使用)；<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(二)存储位置不同，基本类型存储位置在栈中，而包装类型的存储位置位于堆中；<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(三)在与集合类共同使用时，必须使用包装类型。</p>
 <h2 id="4-自动装箱和拆箱"><a href="#4-自动装箱和拆箱" class="headerlink" title="4.自动装箱和拆箱"></a>4.自动装箱和拆箱</h2><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;JDK1.5后引入了自动装箱和拆箱，从而实现基本类型和包装类型的自动转换。自动装箱调用的是valueOf()方法，而自动拆箱调用的是(基本类型+Value())方法，例如Integer实现自动拆箱调用的是intValue()。</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">Integer a = 1;</span><br><span class="line">   Integer b = 1;</span><br><span class="line">   System.out.println(a == b);</span><br><span class="line"></span><br><span class="line">   Integer c = new Integer(1);</span><br><span class="line">   Integer d = new Integer(1);</span><br><span class="line">   System.out.println(c == d);</span><br></pre></td></tr></table></figure>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;运行段代码后，输出应该为：</p>
@@ -502,7 +502,7 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">Boolean a = true;</span><br><span class="line">Boolean b = true;</span><br><span class="line">System.out.println(a == b);</span><br><span class="line"></span><br><span class="line">Boolean c = new Boolean(true);</span><br><span class="line">Boolean d = new Boolean(true);</span><br><span class="line">System.out.println(c == d);</span><br></pre></td></tr></table></figure>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;输出结果如下：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">true</span><br><span class="line">false</span><br></pre></td></tr></table></figure>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;通过观察源码，发现类中有这样两个常量：<br><img src="../images/5.png" alt="在这里插入图片描述"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;当我们进行自动装箱时，返回这两个对象的引用。<br><img src="../images/6.png" alt="在这里插入图片描述">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;我们再来看看其他的包装类：</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;通过观察源码，发现类中有这样两个常量：<br><img src="/post/../images/5.png" alt="在这里插入图片描述"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;当我们进行自动装箱时，返回这两个对象的引用。<br><img src="/post/../images/6.png" alt="在这里插入图片描述">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;我们再来看看其他的包装类：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Double a = 1.0;</span><br><span class="line">Double b = 1.0;</span><br><span class="line">System.out.println(a == b);</span><br></pre></td></tr></table></figure>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;猜测一下答案吧，可能会有点出乎你的意料，答案是：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">true</span><br></pre></td></tr></table></figure>
@@ -560,7 +560,7 @@
 </table>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;值得注意的是Integer缓存池的上限可以我们自己定义，但是不能超过127，而其他包装类型的范围都是已经确定了的。<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;不知道你有没有写过这样的代码？将一个int直接自动装箱为Double。如果没有的话，可以去尝试一下，结果可能会出乎你的意料。</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">public static void main(String[] args) &#123;</span><br><span class="line"></span><br><span class="line">    Double a = 1;</span><br><span class="line"></span><br><span class="line">    Double b = new Double(1);</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;如上所示，你可能会认为Double自动装箱的话调vlaueOf(double    d)那么的话，我的1可以自动类型转换为1.0，那我当然可以实现自动装箱了，然而编译结果如下：<br> <img src="../images/7.png" alt="在这里插入图片描述">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;可以这样理解，<strong>自动装箱的过程中关闭了自动类型转换。</strong></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;如上所示，你可能会认为Double自动装箱的话调vlaueOf(double    d)那么的话，我的1可以自动类型转换为1.0，那我当然可以实现自动装箱了，然而编译结果如下：<br> <img src="/post/../images/7.png" alt="在这里插入图片描述">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;可以这样理解，<strong>自动装箱的过程中关闭了自动类型转换。</strong></p>
 
       
     </div>
@@ -723,7 +723,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">5</span>
+                  <span class="site-state-item-count">6</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
@@ -745,7 +745,7 @@
               
               <div class="site-state-item site-state-tags">
                 
-                  <span class="site-state-item-count">4</span>
+                  <span class="site-state-item-count">6</span>
                   <span class="site-state-item-name">tags</span>
                 
               </div>
