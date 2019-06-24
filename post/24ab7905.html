@@ -75,7 +75,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT">
+  <meta name="keywords" content="KMP,字符串,">
 
 
 
@@ -86,12 +86,13 @@
 
 
 
-<meta name="description" content="KMP算法 &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;在求解字符串的匹配问题时，最容易让人想到的便是BF算法，但是由于BF的时间复杂度为O(n*m)，所以并不是很好。而KMP算法同样用于求解字符串的匹配问题，其时间复杂度为O(n+m)，但是并不是所有人都能理解这种算法，甚至去选择死记硬背。这里并不建议如此做，直接进入正题吧。      &amp;nbsp;&amp;nbs">
+<meta name="description" content="&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;在求解字符串的匹配问题时，最容易让人想到的便是BF算法，但是由于BF的时间复杂度为O(n*m)，所以并不是很好。而KMP算法同样用于求解字符串的匹配问题，其时间复杂度为O(n+m)，但是并不是所有人都能理解这种算法，甚至去选择死记硬背。这里并不建议如此做，直接进入正题吧。      &amp;nbsp;&amp;nbsp;&amp;nb">
+<meta name="keywords" content="KMP,字符串">
 <meta property="og:type" content="article">
 <meta property="og:title" content="最简单的方式理解KMP">
 <meta property="og:url" content="https://wshuaigit.github.io/post/24ab7905.html">
 <meta property="og:site_name" content="WangZhao Blogs">
-<meta property="og:description" content="KMP算法 &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;在求解字符串的匹配问题时，最容易让人想到的便是BF算法，但是由于BF的时间复杂度为O(n*m)，所以并不是很好。而KMP算法同样用于求解字符串的匹配问题，其时间复杂度为O(n+m)，但是并不是所有人都能理解这种算法，甚至去选择死记硬背。这里并不建议如此做，直接进入正题吧。      &amp;nbsp;&amp;nbs">
+<meta property="og:description" content="&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;在求解字符串的匹配问题时，最容易让人想到的便是BF算法，但是由于BF的时间复杂度为O(n*m)，所以并不是很好。而KMP算法同样用于求解字符串的匹配问题，其时间复杂度为O(n+m)，但是并不是所有人都能理解这种算法，甚至去选择死记硬背。这里并不建议如此做，直接进入正题吧。      &amp;nbsp;&amp;nbsp;&amp;nb">
 <meta property="og:locale" content="Zh-Hans">
 <meta property="og:image" content="https://wshuaigit.github.io/img/14.png">
 <meta property="og:image" content="https://wshuaigit.github.io/img/15.png">
@@ -100,10 +101,10 @@
 <meta property="og:image" content="https://wshuaigit.github.io/img/17.png">
 <meta property="og:image" content="https://wshuaigit.github.io/img/18.png">
 <meta property="og:image" content="https://wshuaigit.github.io/img/19.png">
-<meta property="og:updated_time" content="2019-06-24T05:11:15.634Z">
+<meta property="og:updated_time" content="2019-06-24T05:16:25.019Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="最简单的方式理解KMP">
-<meta name="twitter:description" content="KMP算法 &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;在求解字符串的匹配问题时，最容易让人想到的便是BF算法，但是由于BF的时间复杂度为O(n*m)，所以并不是很好。而KMP算法同样用于求解字符串的匹配问题，其时间复杂度为O(n+m)，但是并不是所有人都能理解这种算法，甚至去选择死记硬背。这里并不建议如此做，直接进入正题吧。      &amp;nbsp;&amp;nbs">
+<meta name="twitter:description" content="&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;在求解字符串的匹配问题时，最容易让人想到的便是BF算法，但是由于BF的时间复杂度为O(n*m)，所以并不是很好。而KMP算法同样用于求解字符串的匹配问题，其时间复杂度为O(n+m)，但是并不是所有人都能理解这种算法，甚至去选择死记硬背。这里并不建议如此做，直接进入正题吧。      &amp;nbsp;&amp;nbsp;&amp;nb">
 <meta name="twitter:image" content="https://wshuaigit.github.io/img/14.png">
 
 
@@ -339,6 +340,28 @@
           </span>
 
           
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/算法/" itemprop="url" rel="index">
+                    <span itemprop="name">算法</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
 
           
             
@@ -375,7 +398,7 @@
                   <span class="post-meta-item-text">Words count in article&#58;</span>
                 
                 <span title="Words count in article">
-                  1,378 字
+                  1,375 字
                 </span>
               
 
@@ -412,7 +435,7 @@
       
 
       
-        <h1 id="KMP算法"><a href="#KMP算法" class="headerlink" title="KMP算法"></a>KMP算法</h1><blockquote>
+        <blockquote>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;在求解字符串的匹配问题时，最容易让人想到的便是BF算法，但是由于BF的时间复杂度为O(n*m)，所以并不是很好。而KMP算法同样用于求解字符串的匹配问题，其时间复杂度为O(n+m)，但是并不是所有人都能理解这种算法，甚至去选择死记硬背。这里并不建议如此做，直接进入正题吧。</p>
 </blockquote>
 <blockquote>
@@ -443,6 +466,14 @@
     
 
     <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/KMP/" rel="tag"><i class="fa fa-google"></i>KMP</a>
+          
+            <a href="/tags/字符串/" rel="tag"><i class="fa fa-google"></i>字符串</a>
+          
+        </div>
       
 
       
@@ -558,17 +589,8 @@
       
 
       
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
-            Table of Contents
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
-            Overview
-          </li>
-        </ul>
-      
 
-      <section class="site-overview-wrap sidebar-panel">
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -596,7 +618,7 @@
               
               <div class="site-state-item site-state-categories">
                 
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">3</span>
                   <span class="site-state-item-name">categories</span>
                 
               </div>
@@ -607,7 +629,7 @@
               
               <div class="site-state-item site-state-tags">
                 
-                  <span class="site-state-item-count">6</span>
+                  <span class="site-state-item-count">8</span>
                   <span class="site-state-item-name">tags</span>
                 
               </div>
@@ -646,22 +668,6 @@
         </div>
       </section>
 
-      
-      <!--noindex-->
-        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc">
-
-            
-              
-            
-
-            
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#KMP算法"><span class="nav-number">1.</span> <span class="nav-text">KMP算法</span></a></li></ol></div>
-            
-
-          </div>
-        </section>
-      <!--/noindex-->
       
 
       
