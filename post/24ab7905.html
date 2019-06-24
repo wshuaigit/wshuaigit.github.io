@@ -86,13 +86,25 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="WangZhao Blogs">
-<meta property="og:url" content="https://wshuaigit.github.io/archives/2019/04/index.html">
+<meta name="description" content="KMP算法 &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;在求解字符串的匹配问题时，最容易让人想到的便是BF算法，但是由于BF的时间复杂度为O(n*m)，所以并不是很好。而KMP算法同样用于求解字符串的匹配问题，其时间复杂度为O(n+m)，但是并不是所有人都能理解这种算法，甚至去选择死记硬背。这里并不建议如此做，直接进入正题吧。      &amp;nbsp;&amp;nbs">
+<meta property="og:type" content="article">
+<meta property="og:title" content="最简单的方式理解KMP">
+<meta property="og:url" content="https://wshuaigit.github.io/post/24ab7905.html">
 <meta property="og:site_name" content="WangZhao Blogs">
+<meta property="og:description" content="KMP算法 &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;在求解字符串的匹配问题时，最容易让人想到的便是BF算法，但是由于BF的时间复杂度为O(n*m)，所以并不是很好。而KMP算法同样用于求解字符串的匹配问题，其时间复杂度为O(n+m)，但是并不是所有人都能理解这种算法，甚至去选择死记硬背。这里并不建议如此做，直接进入正题吧。      &amp;nbsp;&amp;nbs">
 <meta property="og:locale" content="Zh-Hans">
+<meta property="og:image" content="https://wshuaigit.github.io/img/14.png">
+<meta property="og:image" content="https://wshuaigit.github.io/img/15.png">
+<meta property="og:image" content="https://wshuaigit.github.io/img/15.png">
+<meta property="og:image" content="https://wshuaigit.github.io/img/16.png">
+<meta property="og:image" content="https://wshuaigit.github.io/img/17.png">
+<meta property="og:image" content="https://wshuaigit.github.io/img/18.png">
+<meta property="og:image" content="https://wshuaigit.github.io/img/19.png">
+<meta property="og:updated_time" content="2019-06-24T05:11:15.634Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="WangZhao Blogs">
+<meta name="twitter:title" content="最简单的方式理解KMP">
+<meta name="twitter:description" content="KMP算法 &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;在求解字符串的匹配问题时，最容易让人想到的便是BF算法，但是由于BF的时间复杂度为O(n*m)，所以并不是很好。而KMP算法同样用于求解字符串的匹配问题，其时间复杂度为O(n+m)，但是并不是所有人都能理解这种算法，甚至去选择死记硬背。这里并不建议如此做，直接进入正题吧。      &amp;nbsp;&amp;nbs">
+<meta name="twitter:image" content="https://wshuaigit.github.io/img/14.png">
 
 
 
@@ -122,13 +134,13 @@
 
 
 
-  <link rel="canonical" href="https://wshuaigit.github.io/archives/2019/04/">
+  <link rel="canonical" href="https://wshuaigit.github.io/post/24ab7905.html">
 
 
 
 
 
-  <title>Archive | WangZhao Blogs</title>
+  <title>最简单的方式理解KMP | WangZhao Blogs</title>
   
 
 
@@ -147,7 +159,7 @@
     
   
 
-  <div class="container sidebar-position-left page-archive">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -273,177 +285,241 @@
           <div id="content" class="content">
             
 
-  
-  
-  
-  <div class="post-block archive">
-    <div id="posts" class="posts-collapse">
-      <span class="archive-move-on"></span>
+  <div id="posts" class="posts-expand">
+    
 
-      <span class="archive-page-counter">
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://wshuaigit.github.io/post/24ab7905.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Wang Zhao">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/qq.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="WangZhao Blogs">
+    </span>
+
+    
+      <header class="post-header">
+
         
         
+          <h1 class="post-title" itemprop="name headline">最简单的方式理解KMP</h1>
         
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-06-24T13:04:59+08:00">
+                2019-06-24
+              </time>
+            
+
+            
+
+            
+          </span>
+
           
-        
-        Um..! 7 posts in total. Keep on posting.
-      </span>
 
-      
-
-        
-        
-        
-
-        
           
-          <div class="collection-title">
-            <h1 class="archive-year" id="archive-year-2019">2019</h1>
-          </div>
-        
-        
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/post/24ab7905.html#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count gitment-comments-count" data-xid="/post/24ab7905.html" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
 
-        
+          
+          
 
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+          
+            <span class="post-meta-divider">|</span>
+            <span class="page-pv">本文总阅读数 <i class="fa fa-file-o"></i>
+            <span class="busuanzi-value" id="busuanzi_value_page_pv"></span>次
+            </span>
+          
 
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/post/9d02b266.html" itemprop="url">
+          
+            <div class="post-wordcount">
               
-                <span itemprop="name">java基础提高(三)</span>
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Words count in article&#58;</span>
+                
+                <span title="Words count in article">
+                  1,378 字
+                </span>
               
-            </a>
-        
-      </h2>
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-04-23T21:02:51+08:00" content="2019-04-23">
-          04-23
-        </time>
-      </div>
+              
+                <span class="post-meta-divider">|</span>
+              
 
-    </header>
-  </article>
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Reading time &asymp;</span>
+                
+                <span title="Reading time">
+                  6 分钟
+                </span>
+              
+            </div>
+          
 
+          
 
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/post/e3f1924d.html" itemprop="url">
-              
-                <span itemprop="name">java基础提高(二)</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-04-20T14:11:14+08:00" content="2019-04-20">
-          04-20
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
       
 
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/post/bb9a1e1b.html" itemprop="url">
-              
-                <span itemprop="name">设计模式--简单工厂模式</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-04-15T11:00:02+08:00" content="2019-04-15">
-          04-15
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
+      
+        <h1 id="KMP算法"><a href="#KMP算法" class="headerlink" title="KMP算法"></a>KMP算法</h1><blockquote>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;在求解字符串的匹配问题时，最容易让人想到的便是BF算法，但是由于BF的时间复杂度为O(n*m)，所以并不是很好。而KMP算法同样用于求解字符串的匹配问题，其时间复杂度为O(n+m)，但是并不是所有人都能理解这种算法，甚至去选择死记硬背。这里并不建议如此做，直接进入正题吧。</p>
+</blockquote>
+<blockquote>
+<p>   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;KMP算法的时间复杂度低的关键便是主串的指针不回溯，只需要更改模式串的指针即可。然而很多人都知道KMP算法的原理，最主要的便是求模式串的next数组，给其一个模式串，可以很快的在纸上求出next数组。但是在面对next数组的代码时，却不能够看懂。终究原因，还是没有完全理解next数组。在这里希望可以用最简单的语言帮助你理解KMP算法。</p>
+</blockquote>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;首先我们假设next[j] = k ,那么意味着当指针指向模式串的j时，其真前缀串和真后缀串的长度都为k，所以通过下面的图可以得到 a 串的长度和b串的长度都为k，并且他们的值相匹配。<br><img src="/post/../img/14.png" alt="在这里插入图片描述"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;那么现在我们要求出next[j+1]的值，应该怎么做呢？<br><img src="/post/../img/15.png" alt="在这里插入图片描述"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;现在我们只需要判断模式串p的p[k]和p[j]是否相等，如果相等的话，那么是不是便有p[j+1] =p[j]+1。注意这里我们可以知道p[j] = p[k]，即p[j+1] = p[k]+1,我们将在next的代码中用到。</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;那么如果不相等呢？那么我们只能在k的前面寻找和j相等的那一个指针。假设next[k] = h,那么我们可以得到下图：<br><img src="/post/../img/15.png" alt="在这里插入图片描述"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;那么意味着1区域和2区域（即绿色区域）的字符串相匹配且长度为h，有因为a区域和b区域的字符串相匹配，所以1区域和区域的字符串相匹配，所以我们需要判断p[h]和p[j]是否相等，如果相等，则有 next[j+1] = h + 1，即next[j+1]等于next[k]+1。如果不相等的话，我们继续递归划分h前面的字符串即可，直到到-1.</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;接下来便介绍代码吧，如下：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">int</span>[] getNext(String str)&#123;</span><br><span class="line">    <span class="keyword">int</span>[] next = <span class="keyword">new</span> <span class="keyword">int</span>[str.length()];</span><br><span class="line">    next[<span class="number">0</span>] = -<span class="number">1</span>; <span class="comment">// 因为首字母的前缀串为空串，所以这里规定为-1</span></span><br><span class="line">    <span class="keyword">int</span> j = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">int</span> k = -<span class="number">1</span>;</span><br><span class="line">    <span class="keyword">while</span>(j &lt; next.length-<span class="number">1</span>)&#123;</span><br><span class="line">        <span class="keyword">if</span>(k==-<span class="number">1</span> || str.charAt(j) == str.charAt(k))&#123;</span><br><span class="line">                  <span class="comment">// k == next[k] == next[j]</span></span><br><span class="line">            ++k; <span class="comment">// next[k] + 1</span></span><br><span class="line">            ++j;</span><br><span class="line">            next[j] = k; <span class="comment">// next[j+1] = next[k] + 1</span></span><br><span class="line">        &#125;<span class="keyword">else</span>&#123; <span class="comment">//不匹配进行递归操作</span></span><br><span class="line">            k = next[k];</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> next;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;以上便是next的求法，不管p[k]和p[j]是否匹配，在我们用图推导时结论都是next[j]=next[k]+1.</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;在求得next数组后，我们便进行字符串的匹配，同样的假设主串的第i个位置和模式串的第j个位置发生了不匹配，那么可得到下面这张图：</p>
+<p><img src="/post/../img/16.png" alt="在这里插入图片描述"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;我们可以知道黄色区域的字符串相互匹配，那么现在我们的目标是在模式串的黄色区域找等于i位置的下标。在我们所求过的next数组，可以知道：<br><img src="/post/../img/17.png" alt="在这里插入图片描述"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;粉色区域为j的前缀子串和后缀子串，对应主串中的如下区域：<br><img src="/post/../img/18.png" alt="在这里插入图片描述"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;我们可以知道粉色区域相互匹配，那么现在我们只需要判断i和k的字符是否相匹配，如果匹配的话，j = next[j]。如果不匹配的话，我们继续递归下去即可，类似于递归求next数组。<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;不知道你有没有这样的疑问，为什么要在k位置判断是否相等，k+1不可以吗？答案是不可以的，如果以k+1为例，那么则认为k的字符包含在粉色区域。如果包含进去的话，next[j]又是一个新的k，有陷入了刚才的问题。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">int</span> <span class="title">KMP</span><span class="params">(String str,String pattern)</span></span>&#123;</span><br><span class="line">       <span class="keyword">int</span>[] next = getNext(str);</span><br><span class="line">       <span class="keyword">int</span> strLen = str.length()-pattern.length();</span><br><span class="line">       <span class="keyword">int</span> i = <span class="number">0</span>;</span><br><span class="line">       <span class="keyword">int</span> j = <span class="number">0</span>;</span><br><span class="line">       <span class="keyword">while</span>(i &lt;= strLen &amp;&amp; j &lt; pattern.length())&#123;</span><br><span class="line">           <span class="keyword">if</span>(j == -<span class="number">1</span> || str.charAt(i) == pattern.charAt(j))&#123;</span><br><span class="line">           	<span class="comment">// j == -1,即说明模式串的首字符和主串的i都不匹配</span></span><br><span class="line">               i++;</span><br><span class="line">               j++;</span><br><span class="line">           &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">               j = next[j];</span><br><span class="line">           &#125;</span><br><span class="line">           <span class="keyword">if</span>(j == pattern.length())&#123;</span><br><span class="line">               <span class="keyword">break</span>;</span><br><span class="line">           &#125;</span><br><span class="line">       &#125;</span><br><span class="line">       <span class="keyword">return</span> i-j;</span><br><span class="line">   &#125;</span><br></pre></td></tr></table></figure>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;接下来我们进行KMP的优化算法，优化算法同样是为了求解next数组，但为什么要求解next数组呢？<br><img src="/post/../img/19.png" alt="在这里插入图片描述"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 假设p[k] == p[j]，那么是不是意味着i位置的字符和k位置的字符不相等呢，所以此时我们直需要判断next[k]位置的字符和i是否匹配，可以跳过一些没必要判断的字符。而next[k] = next[j],即 i 是否和next[next[j]]相匹配。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">int</span>[] getNext2(String str)&#123;</span><br><span class="line">       <span class="keyword">int</span>[] next = <span class="keyword">new</span> <span class="keyword">int</span>[str.length()];</span><br><span class="line">       next[<span class="number">0</span>] = -<span class="number">1</span>;</span><br><span class="line">       <span class="keyword">int</span> j = <span class="number">0</span>;</span><br><span class="line">       <span class="keyword">int</span> k = -<span class="number">1</span>;</span><br><span class="line">       <span class="keyword">while</span>(j &lt; next.length-<span class="number">1</span>)&#123;</span><br><span class="line">           <span class="keyword">if</span>(k==-<span class="number">1</span> || str.charAt(j) == str.charAt(k))&#123;</span><br><span class="line">               ++k;</span><br><span class="line">               ++j;</span><br><span class="line">               <span class="keyword">if</span>(str.charAt(j) == str.charAt(k))</span><br><span class="line">                   next[j] = next[k]; </span><br><span class="line">               <span class="keyword">else</span></span><br><span class="line">                   next[j] = k;</span><br><span class="line">           &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">               k = next[k];</span><br><span class="line">           &#125;</span><br><span class="line">       &#125;</span><br><span class="line">       <span class="keyword">return</span> next;</span><br><span class="line">   &#125;</span><br></pre></td></tr></table></figure>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;以上便是KMP算法的求解了，面对一堆的关系，建议以画图的方式来表示出来，更加直观，容易理解。</p>
 
       
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/post/4cc0092f.html" itemprop="url">
-              
-                <span itemprop="name">java基础提高(一)</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-04-10T11:00:02+08:00" content="2019-04-10">
-          04-10
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
     </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/post/dc79d497.html" rel="next" title="Java基础提高（五）--ArrayList">
+                <i class="fa fa-chevron-left"></i> Java基础提高（五）--ArrayList
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </div>
   
   
   
+  </article>
 
-  
 
+
+    <div class="post-spread">
+      
+        
+  <div class="bdsharebuttonbox">
+    <a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+    <a href="#" class="bds_douban" data-cmd="douban" title="分享到豆瓣网"></a>
+    <a href="#" class="bds_sqq" data-cmd="sqq" title="分享到QQ好友"></a>
+    <a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a>
+    <a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+    <a href="#" class="bds_tieba" data-cmd="tieba" title="分享到百度贴吧"></a>
+    <a href="#" class="bds_twi" data-cmd="twi" title="分享到Twitter"></a>
+    <a href="#" class="bds_fbook" data-cmd="fbook" title="分享到Facebook"></a>
+    <a href="#" class="bds_more" data-cmd="more"></a>
+    <a class="bds_count" data-cmd="count"></a>
+  </div>
+  <script>
+    window._bd_share_config = {
+      "common": {
+        "bdText": "",
+        "bdMini": "2",
+        "bdMiniList": false,
+        "bdPic": ""
+      },
+      "share": {
+        "bdSize": "16",
+        "bdStyle": "0"
+      },
+      "image": {
+        "viewList": ["tsina", "douban", "sqq", "qzone", "weixin", "twi", "fbook"],
+        "viewText": "分享到：",
+        "viewSize": "16"
+      }
+    }
+  </script>
+
+<script>
+  with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='//bdimg.share.baidu.com/static/api/js/share.js?cdnversion='+~(-new Date()/36e5)];
+</script>
+
+      
+    </div>
+  </div>
 
 
           </div>
@@ -451,6 +527,17 @@
 
 
           
+
+  
+    <div class="comments" id="comments">
+      
+        <div id="gitment-container"></div>
+      
+    </div>
+
+  
+
+
 
         </div>
         
@@ -471,8 +558,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -550,6 +646,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#KMP算法"><span class="nav-number">1.</span> <span class="nav-text">KMP算法</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -713,6 +825,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
@@ -759,6 +875,30 @@
 
     
 
+    
+      <script type="text/javascript">
+      function renderGitment(){
+        var gitment = new Gitmint({
+            id: window.location.pathname, 
+            owner: 'wshuaigit',
+            repo: 'commet',
+            
+            lang: "en" || navigator.language || navigator.systemLanguage || navigator.userLanguage,
+            
+            oauth: {
+            
+            
+                client_secret: 'b95546452f1c6cb7684a555a0edf39ec0c7d9119',
+            
+                client_id: '6dcb7d48372de11bbf13'
+            }});
+        gitment.render('gitment-container');
+      }
+
+      
+      renderGitment();
+      
+      </script>
     
 
 
